@@ -31,9 +31,24 @@ router.get("/ajustes", (req, res) => {
   res.send("Hola desde la pagina de ajustes");
 });
 
-router.get("/ajustes", (req, res) => {
+router.get("/perfil", (req, res) => {
   console.log("Alguien hizo a la pagina de datos de usuario");
   res.send("Hola desde la pagina de datos de usuario");
+});
+
+router.get("/ayuda", (req, res) => {
+  console.log("Alguien hizo a la pagina de ayuda");
+  res.send("Hola desde la pagina de ayuda");
+});
+
+router.get("/FAQs", (req, res) => {
+  console.log("Alguien hizo a la pagina de preguntas frecuentes");
+  res.send("Hola desde la pagina de FAQs");
+});
+
+router.get("/detallehotel", (req, res) => {
+  console.log("Alguien hizo a la pagina del detalle del hotel");
+  res.send("Hola desde la pagina de detalle del hotel");
 });
 
 module.exports = router;
