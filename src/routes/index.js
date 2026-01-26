@@ -68,6 +68,36 @@ router.post("/registro", (req, res) => {
   res.send("Hola, debes rellenar el formulario de registro");
 });
 
+router.post("/reservar", (req, res) => {
+  console.log("Se ha accedido a la reserva de un hotel");
+  res.send("Hola, debes rellenar el formulario de reserva");
+});
+
+router.post("/contacto", (req, res) => {
+  console.log("Se ha accedido al formulario de contacto");
+  res.send("Hola, debes rellenar el formulario de contacto");
+});
+
+router.post("/comentario", (req, res) => {
+  console.log("Se ha accedido al formulario de comentario");
+  res.send("Hola, debes rellenar el formulario de comentario");
+});
+
+router.post("/valoracion", (req, res) => {
+  console.log("Se ha accedido al formulario de valoración");
+  res.send("Hola, debes rellenar el formulario de valoración");
+});
+
+router.post("/cambioajustes", (req, res) => {
+  console.log("Se ha accedido al formulario de cambio de ajustes");
+  res.send("Hola, debes rellenar el formulario de cambio de ajustes");
+}); 
+
+router.post("/actualizardatos", (req, res) => {
+  console.log("Se ha accedido al formulario de actualización de datos de usuario");
+  res.send("Hola, debes rellenar el formulario de actualización de datos de usuario");
+});
+
 
 
 module.exports = router;
