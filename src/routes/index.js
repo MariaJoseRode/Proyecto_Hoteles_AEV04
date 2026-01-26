@@ -89,6 +89,7 @@ router.post("/valoracion", (req, res) => {
 });
 
 router.post("/cambioajustes", (req, res) => {
+  req.body="Ajustes cambiados";
   console.log("Se ha accedido al formulario de cambio de ajustes");
   res.send("Hola, debes rellenar el formulario de cambio de ajustes");
 }); 
