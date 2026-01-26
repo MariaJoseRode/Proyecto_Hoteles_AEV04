@@ -1,6 +1,10 @@
 const { Router } = require("express");
 const router = Router();
 
+
+
+//Rutas GET
+
 router.get("/", (req, res) => {
   console.log("Alguien accedió al servidor");
   res.send("Bienvenido al servidor");
@@ -50,5 +54,20 @@ router.get("/detallehotel", (req, res) => {
   console.log("Alguien hizo a la pagina del detalle del hotel");
   res.send("Hola desde la pagina de detalle del hotel");
 });
+
+
+//Rutas POST
+
+router.post("/login", (req, res) => {
+  console.log("Se ha accedido al login de la app");
+  res.send("Hola, soy el login y me debes rellenar");
+});
+
+router.post("/registro", (req, res) => {
+  console.log("Se ha accedido al registro de la app");
+  res.send("Hola, debes rellenar el formulario de registro");
+});
+
+
 
 module.exports = router;

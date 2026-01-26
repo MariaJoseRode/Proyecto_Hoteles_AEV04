@@ -1,5 +1,12 @@
+console.log("Arrancando el servidor...");
+
 const express = require("express");
+const morgan = require("morgan");
 const app = express();
+
+
+
+app.use(morgan("dev"));
 
 app.set("port", process.env.PORT || 8080);
 
